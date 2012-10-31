@@ -135,15 +135,6 @@ textarea {
 	color: #222; 
 }
 
-hr {
-    display: block;
-    margin: 1em 0;
-    padding: 0;
-    height: 0.0625rem;
-    border: 0;
-    border-top: 0.0625rem solid #d3d3d3;
-}
-
 
 
 
@@ -244,6 +235,15 @@ p {
 	-webkit-hyphens: auto;
 	   -moz-hyphens: auto;
 		    hyphens: auto;
+}
+
+hr {
+    display: block;
+    margin: 1em 0;
+    padding: 0;
+    height: 0.0625rem;
+    border: 0;
+    border-top: 0.0625rem solid #d3d3d3;
 }
 
 /********* Images *********/
