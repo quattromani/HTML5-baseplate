@@ -1,0 +1,974 @@
+/* ==========================================================================
+   Contents
+   ========================================================================== */
+
+/*
+ * Base: Colors
+ 
+ * Base: Defaults
+ 		* Reset
+ 		* HTML5 Display Definitions
+ 		* the Clearfix
+ 		* Base Structure
+ 
+ * Base: Font-Face
+ 
+ * Base: Links, Headings, Text, Images, Lists, Forms
+ 
+ * Base: Helper Classes
+ 	* Chrome Frame Prompt
+ 
+ * Layout
+ 
+ * Module
+ 
+ * State
+ 
+ * Theme
+ 
+ * Browser Specific
+ 		* Safari/Chrome/Webkit
+ 		* Firefox
+ 		* Internet Explorer
+ 
+ * Responsive Design
+ 
+ * Print Styles
+ 
+ * Find and Highlight Mistakes in HTML
+ 
+ * Resources, Reminders
+ 
+ * Credits
+ */
+
+
+
+
+
+/* ==========================================================================
+   Base: Colors
+   ========================================================================== */
+/* 
+ 
+ 13437a - dark blue
+ 1d74be - mid blue
+ e1e1e1 - light gray
+ a3a4a4 - mid gray
+ 8a8a8a - gray
+ 
+*/
+
+
+
+
+
+/* ==========================================================================
+   Base: $Defaults
+   ========================================================================== */
+ 
+/********* Reset *********/ 
+html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	border: 0;
+	background: transparent;
+	vertical-align: baseline;
+	font-size: 100%;
+}	
+
+/********* HTML5 Display Definitions *********/
+article, 
+aside, 
+figure, 
+footer, 
+header, 
+hgroup, 
+nav, 
+section {
+	display: block;
+}
+
+audio, 
+canvas, 
+video {
+	display: inline-block;
+	*display: inline; 
+	*zoom: 1;
+}
+
+audio:not([controls]) { display: none; }
+
+/********* the Clearfix *********/
+.clearfix { *zoom: 1; }
+.clearfix:before,
+.clearfix:after { 
+	display: table; 
+	content: ""; 
+	line-height: 0; 
+}
+.clearfix:after { clear: both; }
+
+/********* Base Structure *********/
+html {
+	overflow-y: scroll; /* Force a scrollbar in non-IE */
+	height: 100%;
+	font-size: 62.5%; /* Set base font size to 10px, making em/rem conversion simpler */
+	-webkit-text-size-adjust: 100%; /* Prevent iOS text size adjust on orientation change without disabling user zoom */
+		-ms-text-size-adjust: 100%;
+}
+
+body {
+	margin: 0 auto;
+	min-height: 100%;
+}
+
+body, 
+button, 
+input, 
+select, 
+textarea {
+	background: #ececec; 
+	font-size: 16px;
+	font: 1.6rem Arial, sans-serif; /* 16px */
+	color: #222; 
+}
+
+hr {
+    display: block;
+    margin: 1em 0;
+    padding: 0;
+    height: 0.0625rem;
+    border: 0;
+    border-top: 0.0625rem solid #d3d3d3;
+}
+
+
+
+
+
+
+/* ==========================================================================
+   Base: $Font-Face
+   ========================================================================== */
+   
+@font-face {
+	font-family: 'MyFontFamily';
+	src: url('fonts/myfont-webfont.eot?#iefix') format('embedded-opentype'),
+	url('fonts/myfont-webfont.woff') format('woff'),
+	url('fonts/myfont-webfont.ttf') format('truetype'),
+	url('fonts/myfont-webfont.svg#svgFontName') format('svg');
+}
+
+html {
+	text-rendering: optimizelegibility;	
+	-webkit-font-smoothing: antialiased;
+	   -moz-font-smoothing: antialiased;
+	    -ms-font-smoothing: antialiased;
+	     -o-font-smoothing: antialiased;
+	        font-smoothing: antialiased;
+}
+
+
+
+
+
+/* ==========================================================================
+   Base: $Links, $Headings, $Text, $Images, $Lists, $Forms
+   ========================================================================== */
+
+/********* Links *********/
+a { 
+	margin: 0; 
+	padding: 0; 
+	background: transparent; 
+	vertical-align: baseline; 
+	font-size: 100%;
+}
+
+a:link,
+a:visited {
+	color:#3275aa;
+	text-decoration:none;
+}
+
+a:focus {
+  	outline: thin dotted #333;
+  	outline: 5px auto -webkit-focus-ring-color;
+  	outline-offset: -2px;
+}
+
+a:hover, 
+a:active { 
+	outline: 0; 
+}
+
+/********* $Headings *********/
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 { 
+	font: bold 1.6rem Arial, sans-serif; 
+}
+
+h1 {
+	font-size: 28px; 
+	font-size: 2.8rem;
+}
+
+h2 {
+	font-size: 24px;	
+	font-size: 2.4rem; 
+}
+
+h3 {
+	font-size: 22px;
+	font-size: 2.2rem; 
+}
+
+small {
+	font-size: 10px;
+	font-size: 1.0rem;
+}
+
+/********* $Text *********/
+p,
+blockquote { 	
+	margin-bottom: 24px; 
+}
+
+p {
+	-webkit-hyphens: auto;
+	   -moz-hyphens: auto;
+		    hyphens: auto;
+}
+
+/********* Images *********/
+img {
+	max-width:100%;
+    height:auto;
+    vertical-align: middle;
+}
+
+/********* $Lists *********/
+ul,
+ol {
+  	margin: 0 0 10px 25px;
+  	padding: 0;
+}
+
+ul ul, 
+ul ol, 
+ol ol, 
+ol ul { 
+	margin-bottom: 0;
+}
+
+li { line-height: 20px; }
+
+ul.unstyled,
+ol.unstyled {
+  	margin-left: 0;
+  	list-style: none;
+}
+
+dl {
+  	margin-bottom: 20px;
+}
+
+dt,
+dd {
+  	line-height: 20px;
+}
+
+dt {
+  	font-weight: bold;
+}
+
+dd {
+ 	margin-left: 10px;
+}
+
+/********* $Forms *********/
+input, select { vertical-align: middle; }
+input[type="radio"] { vertical-align: text-bottom; }
+input[type="checkbox"] {
+	vertical-align: bottom; 
+   *vertical-align: baseline;
+}
+
+select, 
+input, 
+textarea {
+	font-size: 0.99px;
+	font: .99rem sans-serif;
+}
+
+::-moz-selection {
+    background: #dcdcdc; /* gainsboro */
+    text-shadow: none;
+}
+
+::selection {
+    background: #dcdcdc; /* gainsboro */
+    text-shadow: none;
+}
+
+label, 
+input[type=button], 
+input[type=submit], 
+button {
+	cursor: pointer;
+	-webkit-appearance: button;
+}
+
+input[type="search"] {
+  	-webkit-box-sizing: content-box;
+       -moz-box-sizing: content-box;
+            box-sizing: content-box;
+  	-webkit-appearance: textfield;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button {
+  	-webkit-appearance: none;
+}
+
+textarea {
+  	overflow: auto;
+  	vertical-align: top;
+}
+
+label,
+input,
+button,
+select,
+textarea {
+	font-size: 14px;
+	font-size: 1.4rem;
+  	line-height: 1.25rem;
+  	font-weight: normal;
+}
+
+input,
+button,
+select,
+textarea {
+  	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+label {
+  	display: block;
+  	margin-bottom: 0.5rem; /* 5px / 14px */
+}
+
+select,
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input {
+  	display: inline-block;
+  	height: 20px;
+  	margin-bottom: 9px;
+  	padding: 4px 6px;
+  	-webkit-border-radius: 3px;
+       -moz-border-radius: 3px;
+            border-radius: 3px;
+  	color: #555555; /* sgidarkgray */
+    font-size: 14px;
+    font-size: 1.4rem;
+}
+
+input,
+textarea,
+.uneditable-input {
+
+}
+
+textarea {
+  	height: auto;
+}
+
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input {
+  	border: 1px solid #cccccc;
+  	background-color: #ffffff;
+  	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+       -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+            box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  	-webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+       -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
+         -o-transition: border linear 0.2s, box-shadow linear 0.2s;
+   	        transition: border linear 0.2s, box-shadow linear 0.2s;
+}
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {
+  	outline: 0;
+  	outline: thin dotted \9;
+  	/* IE6-9 */
+  	border-color: rgba(82, 168, 236, 0.8);
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+       -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+            box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  	margin: 4px 0 0;
+  	margin-top: 1px \9;
+  	line-height: normal;
+  	cursor: pointer;
+  	*margin-top: 0;
+}
+
+input[type="file"],
+input[type="image"],
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+input[type="radio"],
+input[type="checkbox"] {
+  	width: auto;
+}
+
+select,
+input[type="file"] {
+  	height: 30px;
+  	line-height: 30px;
+  	line-height: 3.0rem;
+  	*margin-top: 4px;
+}
+
+select {
+  	width: 220px;
+  	border: 1px solid #cccccc; /* grey 80 */
+  	background-color: #ffffff; /* white */
+}
+
+select[multiple], 
+select[size] { 
+	height: auto; 
+}
+
+select:focus,
+input[type="file"]:focus,
+input[type="radio"]:focus,
+input[type="checkbox"]:focus {
+  	outline: thin dotted #333;
+  	outline: 5px auto -webkit-focus-ring-color;
+  	outline-offset: -2px;
+}
+
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  	padding: 0;
+  	border: 0;
+}
+
+/* make buttons play nice in IE */
+button,
+input {
+	line-height: normal;
+	*overflow: visible;
+}	
+
+
+
+
+
+/* ==========================================================================
+   Base: $Helper Classes
+   ========================================================================== */
+
+/********* Chrome Frame Prompt *********/
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc; /* grey 80 */
+    color: #000; /* black */
+    padding: 0.2em 0;
+}
+
+.left {	float:left;	}
+
+.right { float:right; }
+
+/* Hide from both screenreaders and browsers */
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.show { display: block; }
+
+/* Hide only visually, but have it available for screenreaders */
+.visuallyhidden {
+    position: absolute;
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+}
+
+/* Hide visually and from screenreaders, but maintain layout */
+.invisible { visibility: hidden; }	
+
+
+
+
+
+/* ==========================================================================
+   $Layout
+   ========================================================================== */
+
+header,
+article,
+footer {
+	width: 960px;
+	margin: 0 auto;
+}
+
+header { 
+
+}
+
+.main { 
+
+}
+
+article { 
+
+}
+
+section { 
+
+}
+
+aside { 
+
+}
+
+footer { 
+
+}
+
+
+
+
+
+/* ==========================================================================
+   $Module
+   ========================================================================== */
+
+nav { 
+
+}
+
+.lede { 
+
+}
+
+.content { 
+
+}
+
+
+
+
+
+/* ==========================================================================
+   $State
+   ========================================================================== */
+
+
+
+
+
+/* ==========================================================================
+   $Theme
+   ========================================================================== */
+
+
+
+
+
+/* ==========================================================================
+   $Browser Specific
+   ========================================================================== */
+
+/* Safari/Chrome/Webkit */
+/* Webkit browsers add a 2px margin outside the chrome of form elements */
+button, 
+input, 
+select, 
+textarea {
+	margin: 0;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	/* Styles  */
+}
+
+/* Firefox */
+@-moz-document url-prefix() { 
+	/* Styles */
+}
+
+/* Ah, Internet Explorer */
+/* make buttons play nice in IE */
+button { 
+	overflow: visible;
+	width: auto;
+}
+
+/* ie6 (.ie6) */
+.ie6 html {filter: expression(document.execCommand("BackgroundImageCache", false, true));} /* prevent BG image flicker upon hover */
+.ie6 input {vertical-align: text-bottom;}
+
+/* ie7 (.ie7) */
+.ie7 img {-ms-interpolation-mode: bicubic;} /* scale images in IE7 more attractively */
+
+/* ie8 (.ie8) */
+	/* Styles */
+
+/* ie9 (.ie9) */
+	/* Styles */
+
+
+
+
+
+/* ==========================================================================
+   $Responsive Design
+   ========================================================================== */
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-width : 320px)
+and (max-width : 480px) {
+/* Styles */
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen
+and (min-width : 321px) {
+/* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen
+and (max-width : 320px) {
+/* Styles */
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen
+and (min-width : 768px)
+and (max-width : 1024px) {
+/* Styles */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen
+and (min-width : 768px)
+and (max-width : 1024px)
+and (orientation : landscape) {
+/* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen
+and (min-width : 768px)
+and (max-width : 1024px)
+and (orientation : portrait) {
+/* Styles */
+}
+
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 1224px) {
+/* Styles */
+}
+
+/* Large screens ----------- */
+@media only screen
+and (min-width : 1824px) {
+/* Styles */
+}
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+/* Styles */
+}
+
+/* Retina Displays ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+  
+/* Retina-specific stuff here */
+
+}
+
+/* IE10 Snap Mode ----------- */
+@media screen 
+and (max-width:400px) {
+    @-ms-viewport {
+  		width: device-width;
+    	/* Styles */
+	}
+}
+
+
+
+
+/* ==========================================================================
+   $Print Styles 
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,a:visited { text-decoration: underline; }
+
+    a[href]:after { content: " (" attr(href) ")"; }
+
+    abbr[title]:after { content: " (" attr(title) ")"; }
+
+    /* Don't show links for images, or javascript/internal links */
+    tr,
+    img {
+    	page-break-inside: avoid;
+    }
+
+    img {max-width: 100% !important;}
+
+    @page {margin: 0.5cm;}
+
+    p,
+    h2,
+    h3 {	
+    	orphans: 3;
+    	widows: 3;
+    }
+
+    h2,
+    h3 {
+   		page-break-after: avoid;
+   	}
+}
+
+
+
+/* ==========================================================================
+   $Find and Highlight Mistakes in HTML **** Remove from final stylesheet
+   ========================================================================== */
+
+/* Empty Elements */
+div:empty, 
+span:empty, 
+li:empty, 
+p:empty, 
+td:empty, 
+th:empty { 
+	padding: 20px; 
+	border: 5px dotted yellow !important; 
+}
+
+/* Empty Attributes */
+*[alt=""], 
+*[title=""], 
+*[class=""], 
+*[id=""], 
+a[href=""], 
+a[href="#"] { 
+	border: 5px solid yellow !important; 
+}
+
+/* Deprecated Elements */
+applet, 
+basefont, 
+center, 
+dir, 
+font, 
+isindex, 
+menu, 
+s, 
+strike, 
+u { 
+	border: 5px dotted red !important; 
+}
+
+/* Deprecated Attributes */
+*[background], 
+*[bgcolor], 
+*[clear], 
+*[color], 
+*[compact], 
+*[noshade], 
+*[nowrap], 
+*[size], 
+*[start],
+*[bottommargin], 
+*[leftmargin], 
+*[rightmargin], 
+*[topmargin], 
+*[marginheight], 
+*[marginwidth], 
+*[alink], 
+*[link], 
+*[text], 
+*[vlink],
+*[align], 
+*[valign],
+*[hspace], 
+*[vspace],
+*[height], 
+*[width],
+ul[type], 
+ol[type], 
+li[type] { 
+	border: 5px solid red !important; 
+}
+
+/* Proposed Deprecated Elements */
+input[type="button"], 
+big, 
+tt { 
+	border: 5px dotted springgreen !important;
+}
+
+/* Proposed Deprecated Attributes */
+*[border], 
+a[target], 
+table[cellpadding], 
+table[cellspacing], 
+*[name] { 
+	border: 5px solid springgreen !important;
+}
+
+
+
+
+
+/* ==========================================================================
+   $Resources, $Reminders **** Remove from final stylesheet
+   ========================================================================== */
+
+/********* Sorting *********/
+/* 
+.example.selector { 
+ 	Position
+ 	Display 
+ 	Color
+ 	Text
+ 	Other
+}
+*/
+
+/********* vender prefixes ********/
+/*
+selector {
+	-webkit-property: value;
+ 	   -moz-property: value;
+ 	     -o-property: value;
+ 	        property: value;  	
+}
+
+.opacity {
+	/* IE 8 */
+  	/*-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+
+  	/* IE 5-7 */
+  	/*filter: alpha(opacity=50);
+
+  	/* Netscape */
+  	/*-moz-opacity: 0.5;
+
+  	* Safari 1.x */
+  	/*-khtml-opacity: 0.5;
+
+  	/* Good browsers */
+  	/*opacity: 0.5;
+}
+*/
+
+
+
+
+
+/* ==========================================================================
+   $Credits **** Remove from final stylesheet, but maybe leave it...
+   ========================================================================== */
+/*----------------------------------------------------------
+	Credit for much of this code base belongs to:
+	
+	HTML5 Boilerplate	:: http://html5boilerplate.com
+	HTML5 Reset			:: http://html5reset.org
+	Twitter Bootstrap	:: http://twitter.github.com/bootstrap/
+	SMACSS				:: http://smacss.com/
+	CSSWizardry			:: http://csswizardry.com/
+	CSS Tricks			:: http://css-tricks.com
+	
+	
+	If I left anybody off in error, I apologize, and I will 
+	be happy to add to the credits
+------------------------------------------------------------*/
