@@ -25,3 +25,17 @@ Remy Sharp			:: http://remysharp.com/2009/01/07/html5-enabling-script/
 SMACSS				:: http://smacss.com/  
 Tim Kadlec			:: http://timkadlec.com/2012/10/ie10-snap-mode-and-responsive-design/  
 Twitter Bootstrap	:: http://twitter.github.com/bootstrap/  
+
+## CSS Best Practices Employed
+
+### Grouping
+
+One selector/one attribute/one line - everything else is multiline (one exception: I break this rule for the reset just to keep it under control) 
+  
+	EX:	.someDiv { color: #222; }  
+		.someOtherDiv {
+			color: #222;  
+			margin: 0 auto;  
+		}  
+		
+		
