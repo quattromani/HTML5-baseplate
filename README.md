@@ -43,4 +43,30 @@ One selector/one attribute/one line - everything else is multiline (one exceptio
 			margin: 0 auto;  
 		}  
 		
-		
+### Declaration Organization  
+
+I use the following ordering method for my declarations:  
+
+Box (Display, Float, Position, Left, Top, Width, Margin, Padding, etc.)  
+Border  
+Background  
+Text  
+Other  
+
+### Commenting  
+
+Section comments are styled thusly:  
+
+/* ==========================================================================  
+   Section  
+   ========================================================================== */   
+     
+Section chunks get styled as such:  
+
+/* ==========================  
+   Reset  
+   ========================== */  
+   
+and Hints get styled like this:  
+
+/* Hint */
