@@ -28,12 +28,17 @@ Twitter Bootstrap	:: http://twitter.github.com/bootstrap/
 
 ## CSS Best Practices Employed
 
-### Grouping
+### Formatting 
 
-One selector/one attribute/one line - everything else is multiline (one exception: I break this rule for the reset just to keep it under control) 
+Space between selector and opening curly brace.  
+Space after opening curly brace and declaration (single line) or line-break after opening curly brace (multi-line).    
+Multiple selectors are separated by a comma and line-break.  
+One selector/one attribute/one line - everything else is multiline (one exception: I break this rule for the reset just to keep it under control).  
   
 	EX:	.someDiv { color: #222; }  
-		.someOtherDiv {
+	   
+		.someOtherDiv,
+		.someAdditional Div {
 			color: #222;  
 			margin: 0 auto;  
 		}  
