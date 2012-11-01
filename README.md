@@ -18,7 +18,7 @@ CSSWizardry			:: http://csswizardry.com/
 Entypo Pictograms	:: http://entypo.com  
 HTML5 Boilerplate	:: http://html5boilerplate.com  
 HTML5 Reset			:: http://html5reset.org  
-Max Voltar			:: http:maxvoltar.com/archive/-webkit-font-smoothing/  
+Max Voltar			:: http://maxvoltar.com/archive/-webkit-font-smoothing/  
 Modernizr			:: http://modernizr.com/  
 Normalize			:: http://necolas.github.com/normalize.css  
 Remy Sharp			:: http://remysharp.com/2009/01/07/html5-enabling-script/  
