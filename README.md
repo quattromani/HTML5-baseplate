@@ -8,7 +8,7 @@ Add in a bit of SMACSS and some of the best practices that I have adopted over t
 
 I will be adding to this README in the future, covering each piece and portion in detail, but for now, poke around and enjoy, use, manipulate, do whatever you'd like to make this your own. I welcome comments and feedback.
 
-Here is a list of sources I leaned on while building baseplate:\
+Here is a list of sources I leaned on while building baseplate:
 
 
 ## SOURCES:
