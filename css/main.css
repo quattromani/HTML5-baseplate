@@ -142,7 +142,8 @@ select,
 textarea {
 	background: #ececec; 
 	font-size: 16px;
-	font: 1.6rem Arial, sans-serif; /* 16px */
+	font: 1.6rem Arial, sans-serif;
+	line-height: 1.618em;
 	color: #222; 
 }
 
