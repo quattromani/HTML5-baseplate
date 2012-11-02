@@ -73,7 +73,7 @@ aside{}
 footer{}
 nav{}.lede{}.content{}.icon{font-family:Entypo;}.chromeframe{margin:0.2em 0;background:#ccc;color:#222;padding:0.2em 0;}
 button,input,select,textarea{margin:0;}@media screen and(-webkit-min-device-pixel-ratio:0){}@-moz-document url-prefix(){}
-button{overflow:visible;width:auto;}.ie img{-ms-interpolation-mode:bicubic;}.ie6 html{filter:expression(document.execCommand("BackgroundImageCache",false,true));}.ie6 input{vertical-align:text-bottom;}.ie9 svg:not(:root){overflow:hidden;}@media(max-width:1300px){}@media(max-width:768px){}@media(max-width:480px){}@media
+button{overflow:visible;width:auto;}.ie img{-ms-interpolation-mode:bicubic;}.ie6 html{filter:expression(document.execCommand("BackgroundImageCache",false,true));}.ie6 input{vertical-align:text-bottom;}.ie9 svg:not(:root){overflow:hidden;}@media(max-width:1024px){}@media(max-width:768px){}@media(max-width:480px){}@media
 only screen and(-webkit-min-device-pixel-ratio:2),only screen and(min--moz-device-pixel-ratio:2),only screen and(-o-min-device-pixel-ratio:2/1),only screen and(min-device-pixel-ratio:2),only screen and(min-resolution:192dpi),only screen and(min-resolution:2dppx){}@media screen
 and(max-width:400px){@-ms-viewport{width:device-width;}}@media print{*{background:transparent!important;color:#000!important;box-shadow:none!important;text-shadow:none!important;}
 a,a:visited{text-decoration:underline;}
