@@ -13,6 +13,7 @@ Here is a list of sources I leaned on while building baseplate:
 
 ## SOURCES:
 
+ARIA				:: http://www.w3.org/WAI/intro/aria
 CSS Tricks			:: http://css-tricks.com  
 CSSWizardry			:: http://csswizardry.com/  
 Entypo Pictograms	:: http://entypo.com  
@@ -80,5 +81,9 @@ I made the decision to limit the media queries in Baseplate to three (3) resolut
 
 Most smartphones sit at or under 480px, tablets (in portrait mode) are mostly 768px, and standard desktops/laptops (and tablet landscape modes) hang out in the 1024px range or above.  
 
-Of course you're welcome to make whatever changes you like. This makes sense to me and allows me to define how the site will work better upfront to the designers, PM's, and business owners before I lay down the first line of code.  
+Of course you're welcome to make whatever changes you like. This makes sense to me and allows me to define how the site will work better upfront to the designers, PM's, and business owners before I lay down the first line of code.   
+
+### ARIA  
+
+I am using ARIA role attributes as best as possible. By setting these upfront, HTML5 Baseplate "make(s) it possible to provide an enhanced user experience for people with disabilities when using internet applications with assistive technologies."
 
