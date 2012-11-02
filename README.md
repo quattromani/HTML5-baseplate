@@ -21,7 +21,7 @@ HTML5 Reset			:: http://html5reset.org
 Max Voltar			:: http://maxvoltar.com/archive/-webkit-font-smoothing/  
 Modernizr			:: http://modernizr.com/  
 Normalize			:: http://necolas.github.com/normalize.css  
-Nicole Sullivan		:: https://github.com/stubbornella/oocss/wiki 
+Nicole Sullivan		:: https://github.com/stubbornella/oocss/wiki   
 Remy Sharp			:: http://remysharp.com/2009/01/07/html5-enabling-script/  
 SMACSS				:: http://smacss.com/  
 Tim Kadlec			:: http://timkadlec.com/2012/10/ie10-snap-mode-and-responsive-design/  
