@@ -660,16 +660,18 @@ header {
 
 }
 
-article { 
-
-}
-
 section { 
 
 }
 
-aside { 
+article { 
+	float: left;
+	width: 65%;
+}
 
+aside { 
+	float: right;
+	width: 31%;
 }
 
 footer { 
@@ -797,7 +799,11 @@ button {
    ========================== */
 
 @media (max-width: 1024px) {
-	/* Styles */
+	article,
+	aside {
+		clear: both;
+		width: 100%;
+	}
 }
 
 /* ==========================
