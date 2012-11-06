@@ -815,7 +815,7 @@ button {
 	Desktop
    ========================== */
 
-@media (max-width: 1024px) {
+@media (max-width: 64em) {
 	.wrapper { padding: 20px 5%;}
 	article,
 	aside {
@@ -828,7 +828,7 @@ button {
 	Tablet
    ========================== */   
 
-@media (max-width: 768px) {
+@media (max-width: 50em) {
 	/* Styles */
 }
    
@@ -836,7 +836,7 @@ button {
 	SmartPhone
    ========================== */   
 
-@media (max-width: 480px) {
+@media (max-width: 30em) {
 	nav[role="navigation"] li {
 		width: 45%;
 	}
