@@ -89,7 +89,9 @@ I made the decision to limit the media queries in Baseplate to three (3) resolut
 
 Most smartphones sit at or under 480px, tablets (in portrait mode) are mostly 768px, and standard desktops/laptops (and tablet landscape modes) hang out in the 1024px range or above. 
 
-##*UPDATE:* I have changed my media queries from pixel measurements to em's. After some research I think that this offers more flexibility for smaller screens; especially in regards to tablet/smartphone zooming.   
+###*UPDATE:*  
+
+I have changed my media queries from pixel measurements to em's. After some research I think that this offers more flexibility for smaller screens; especially in regards to tablet/smartphone zooming.   
 
 Of course you're welcome to make whatever changes you like. This makes sense to me and allows me to define how the site will work better upfront to the designers, PM's, and business owners before I lay down the first line of code.   
 
