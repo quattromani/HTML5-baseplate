@@ -817,6 +817,11 @@ button {
 
 @media (max-width: 64em) {
 	.wrapper { padding: 20px 5%;}
+	
+	header[role="banner"] {
+		text-align: center;
+	}
+	
 	article,
 	aside {
 		clear: both;
@@ -829,9 +834,7 @@ button {
    ========================== */   
 
 @media (max-width: 50em) {
-	header[role="banner"] {
-		text-align: center;
-	}
+	/* Styles */
 }
    
 /* ==========================
