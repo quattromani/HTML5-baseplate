@@ -652,8 +652,8 @@ input {
 	padding: 20px 2%;
 }
 
-header { 
-
+header[role="banner"] { 
+	margin-bottom: 30px;
 }
 
 .main { 
@@ -829,7 +829,9 @@ button {
    ========================== */   
 
 @media (max-width: 50em) {
-	/* Styles */
+	header[role="banner"] {
+		text-align: center;
+	}
 }
    
 /* ==========================
