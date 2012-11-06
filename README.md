@@ -10,7 +10,7 @@ I will be adding to this README in the future, covering each piece and portion i
 
 ## UPDATE:  
 
-I decided to add some basic responsive aspects to the Baseplate. I included a cookie-cutter navigation example and set the '<aside>' to the right. I'm really trying to keep the code to a minimum and not make assumptions about how this should be used, but I wanted the demo to have at least a <em>little</em> life to it.  
+I decided to add some basic responsive aspects to the Baseplate. I included a cookie-cutter navigation example and set the `<aside>` to the right. I'm really trying to keep the code to a minimum and not make assumptions about how this should be used, but I wanted the demo to have at least a <em>little</em> life to it.  
 
 ### DEMO 
 
