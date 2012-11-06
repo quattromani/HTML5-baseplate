@@ -121,11 +121,11 @@ audio:not([controls]) { display: none; }
 /* ==========================
 	Base Stucture
    ========================== */
-
+   
 * {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
+  	-webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+          	box-sizing: border-box;
 }
    
 html {
@@ -346,7 +346,7 @@ a img { border: 0; }
    
 ul,
 ol {
-  	margin: 0 0 10px 25px;
+  	margin: 0 0 10px;
   	padding: 0;
 }
 
@@ -675,7 +675,7 @@ aside {
 }
 
 footer { 
-
+	clear: both;
 }
 
 
@@ -690,13 +690,30 @@ nav {
 
 }
 
-.lede { 
+	nav[role="navigation"] li {
+    	float: left;
+    	margin: 0 2.5% 25px; /* horizontal margin + width should equal 100% */
+    	width: 20%;
+    	text-align: center;
+    	list-style: none;
+	}
+	
+	nav[role="navigation"] li.last {
+    	margin-right: 0;
+	}
+	
+	nav[role="navigation"] li a {
+	    display: block;
+	    float: left;
+	    width: 100%;
+	    font-size: 16px;
+	    font-size: 1.6rem;
+	    color: #fc6b35;
+	    letter-spacing: 2px;
+	    text-decoration: none;
+	    text-transform: uppercase;
+	}
 
-}
-
-.content { 
-
-}
 
 
 
@@ -799,6 +816,7 @@ button {
    ========================== */
 
 @media (max-width: 1024px) {
+	.wrapper { padding: 20px 5%;}
 	article,
 	aside {
 		clear: both;
@@ -819,7 +837,9 @@ button {
    ========================== */   
 
 @media (max-width: 480px) {
-	/* Styles */
+	nav[role="navigation"] li {
+		width: 45%;
+	}
 }
 
 /* ==========================
@@ -1046,19 +1066,15 @@ selector {
 /*
 	Credit for much of this code base belongs to:
 	
-	CSS Tricks 			:: http://css-tricks.com
-	CSSWizardry 		:: http://csswizardry.com/
-	Entypo Pictograms 	:: http://entypo.com
-	HTML5 Boilerplate 	:: http://html5boilerplate.com
-	HTML5 Reset 		:: http://html5reset.org
-	Max Voltar 			:: http://maxvoltar.com/archive/-webkit-font-smoothing/
-	Modernizr 			:: http://modernizr.com/
-	Normalize 			:: http://necolas.github.com/normalize.css
-	Nicole Sullivan 	:: https://github.com/stubbornella/oocss/wiki
-	Remy Sharp 			:: http://remysharp.com/2009/01/07/html5-enabling-script/
-	SMACSS 				:: http://smacss.com/
-	Tim Kadlec 			:: http://timkadlec.com/2012/10/ie10-snap-mode-and-responsive-design/
-	Twitter Bootstrap 	:: http://twitter.github.com/bootstrap/
+	CSS Tricks			:: http://css-tricks.com
+	CSSWizardry			:: http://csswizardry.com/
+	Entypo Pictograms	:: http://entypo.com
+	HTML5 Boilerplate	:: http://html5boilerplate.com
+	HTML5 Reset			:: http://html5reset.org
+	Max Voltar			:: http:maxvoltar.com/archive/-webkit-font-smoothing/
+	Normalize			:: http://necolas.github.com/normalize.css
+	SMACSS				:: http://smacss.com/
+	Twitter Bootstrap	:: http://twitter.github.com/bootstrap/
 	
 	
 	If I left anybody off in error, I apologize, and I will 
