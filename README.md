@@ -8,6 +8,10 @@ Add in a bit of SMACSS and OOCSS influence and some of the best practices that I
 
 I will be adding to this README in the future, covering each piece and portion in detail, but for now, poke around and enjoy, use, manipulate, do whatever you'd like to make this your own. I welcome comments and feedback.
 
+## UPDATE:  
+
+I decided to add some basic responsive aspects to the Baseplate. I included a cookie-cutter navigation example and set the <aside> to the right. I'm really trying to keep the code to a minimum and not make assumptions about how this should be used, but I wanted the demo to have at least a <em>little</em> life to it.
+
 Here is a list of sources I leaned on while building baseplate:
 
 
