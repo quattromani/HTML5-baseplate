@@ -12,3 +12,9 @@ if (!(window.console && console.log)) {
 }
 
 // Place any jQuery/helper plugins in here.
+
+// Get current year
+var currentYear = (new Date).getFullYear();
+  	$(document).ready(function() {
+  	$("#year").text( (new Date).getFullYear() );
+ });
