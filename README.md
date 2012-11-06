@@ -45,13 +45,13 @@ Space after opening curly brace and declaration (single line) or line-break afte
 Multiple selectors are separated by a comma and line-break.  
 One selector/one attribute/one line - everything else is multiline (one exception: I break this rule for the reset just to keep it under control).  
   
-	`EX:	.someDiv { color: #222; }  
+	EX:	.someDiv { color: #222; }  
 	   
 		.someOtherDiv,
 		.someAdditional Div {
 			color: #222;  
 			margin: 0 auto;  
-		}  `
+		}  
 		
 ### Declaration Organization  
 
