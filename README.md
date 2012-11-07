@@ -63,6 +63,10 @@ Background
 Text  
 Other  
 
+###!important  
+
+Just don't do it.
+
 ###Commenting  
 
 Section comments are styled thusly:  
@@ -88,7 +92,7 @@ and Hints get styled like this:
 * Class
 * ID
 * Data-*
-* for | type | href  
+* for | 9/type | href  
 
 	EX: `<a class="" id="" data-name="" href="">[link]</a>`
 
