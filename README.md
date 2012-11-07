@@ -88,7 +88,7 @@ and Hints get styled like this:
 * Class
 * ID
 * Data-*
-* for | |type | href  
+* for | type | href  
 
 	EX: `<a class="" id="" data-name="" href="">[link]</a>`
 
