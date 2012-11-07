@@ -97,5 +97,9 @@ Of course you're welcome to make whatever changes you like. This makes sense to 
 
 ### ARIA  
 
-I am using ARIA role attributes as best as possible. By setting these upfront, HTML5 Baseplate "make(s) it possible to provide an enhanced user experience for people with disabilities when using internet applications with assistive technologies."
+I am using ARIA role attributes as best as possible. By setting these upfront, HTML5 Baseplate "make(s) it possible to provide an enhanced user experience for people with disabilities when using internet applications with assistive technologies."  
+
+## Find and Highlight Mistakes in HTML  
+
+Included in main.css is Eric Meyer's Diagnostic CSS code. This little tidbit will let you know if you've left any empty classes hanging around or if you've *GASP* used a deprecated selector. Very handy piece of code, although you may want to remove it from your final production stylesheet just for the sake of minifying your code as much as possible.
 
