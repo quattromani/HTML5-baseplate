@@ -90,7 +90,7 @@ and Hints get styled like this:
 * Data-*
 * for | |type | href  
 
-	EX: <a class="" id="" data-name="" href="">[link]</a>
+	EX: `<a class="" id="" data-name="" href="">[link]</a>`
 
 ##Code Choices Explained  
 
