@@ -101,5 +101,5 @@ I am using ARIA role attributes as best as possible. By setting these upfront, H
 
 ## Find and Highlight Mistakes in HTML  
 
-Included in main.css is Eric Meyer's Diagnostic CSS code. This little tidbit will let you know if you've left any empty classes hanging around or if you've *GASP* used a deprecated selector. Very handy piece of code, although you may want to remove it from your final production stylesheet just for the sake of minifying your code as much as possible.
+Included in main.css is Eric Meyer's Diagnostic CSS code. This little tidbit will let you know if you've left any empty classes hanging around or if you've used a deprecated selector. Very handy piece of code, although you may want to remove it from your final production stylesheet just for the sake of minifying your code as much as possible.
 
