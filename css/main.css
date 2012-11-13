@@ -163,13 +163,20 @@ textarea {
    ========================================================================== */
    
 @font-face {
-	font-family: 'Entypo';
-	src: url('fonts/Entypo/entypo.eot?#iefix') format('embedded-opentype'),
-	url('fonts/Entypo/entypo.woff') format('woff'),
-	url('fonts/Entypo/entypo.ttf') format('truetype'),
-	url('fonts/Entypo/entypo.svg#svgEntypoRegular') format('svg');
+	font-family: 'Iconic';
+	src: url('fonts/Iconic/fill/iconic_fill.eot?#iefix') format('embedded-opentype'),
+	url('fonts/Iconic/fill/iconic_fill.woff') format('woff'),
+	url('fonts/Iconic/fill/iconic_fill.ttf') format('truetype'),
+	url('fonts/Iconic/fill/iconic_fill.svg#svgIconic') format('svg');
 }
 
+@font-face {
+	font-family: 'Iconic_Stroke';
+	src: url('fonts/Iconic/stroke/iconic_stroke.eot?#iefix') format('embedded-opentype'),
+	url('fonts/Iconic/stroke/iconic_stroke.woff') format('woff'),
+	url('fonts/Iconic/stroke/iconic_stroke.ttf') format('truetype'),
+	url('fonts/Iconic/stroke/iconic_stroke.svg#svgIconic_Stroke') format('svg');
+}
 
 
 
