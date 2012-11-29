@@ -13,7 +13,7 @@
  
  * Base: Font-Face
  
- * Base: Links, Typography, figures, Images, Lists, Forms, Tables
+ * Base: Links, Typography, figures, Images, Lists, Forms, Tables		
  
  * Base: Helper Classes
  
@@ -147,10 +147,15 @@ input,
 select, 
 textarea {
 	background: #ececec; 
-	font-size: 16px;
+	font-size: 16px; /* scale origin */
 	font: 1.6rem Arial, sans-serif;
-	line-height: 1.618;
+	line-height: 1.442; /* baseline 'leading' chosen from modular scale (f*(φ^-6)) - keep this unitless */
 	color: #222; 
+	
+	/* 
+		http://modularscale.com/scale/?px1=16&px2=&ra1=1.618&ra2=0
+		16px @ 1:1.618
+	*/
 }
 
 
@@ -233,29 +238,33 @@ h3,
 h4, 
 h5, 
 h6 { 
-	font: bold 1.6rem Arial, sans-serif; 
+	font: bold Arial, sans-serif; 
 }
 
 h1 {
-	font-size: 28px; 
-	font-size: 2.8rem;
+	font-size: 42px; /* 16 × (φ2) = 42px */
+	font-size: 4.2rem;
 }
 
 h2 {
-	font-size: 24px;	
-	font-size: 2.4rem; 
+	font-size: 26px; /* 16 × φ = 26px */	
+	font-size: 2.6rem; 
 }
 
 h3 {
-	font-size: 22px;
-	font-size: 2.2rem; 
+	font-size: 20px; /* 16 × sqrt(φ) = 20px */
+	font-size: 2.0rem; 
 }
 
-small { font-size: 85%; }
+small { 
+	font-size: 13px; /*  16 × (1 ÷ sqrt(φ)) = 13px */ 
+	font-size: 1.3rem;
+}
 
 p,
-blockquote { 	
-	margin-bottom: 24px; 
+blockquote,
+small { 	
+	margin-bottom: 1.618em; 
 }
 
 p {
@@ -1084,8 +1093,9 @@ selector {
 	HTML5 Boilerplate	:: http://html5boilerplate.com
 	HTML5 Reset			:: http://html5reset.org
 	Max Voltar			:: http:maxvoltar.com/archive/-webkit-font-smoothing/
-	Normalize			:: http://necolas.github.com/normalize.css
+	Pearsonified		:: http://www.pearsonified.com/2011/12/golden-ratio-typography.php
 	SMACSS				:: http://smacss.com/
+	Tim Brown			:: http://www.alistapart.com/articles/more-meaningful-typography/
 	Twitter Bootstrap	:: http://twitter.github.com/bootstrap/
 	
 	
