@@ -867,23 +867,17 @@ button {
 	Retina
    ========================== */ 
    
-@media
-only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (   min--moz-device-pixel-ratio: 2),
-only screen and (     -o-min-device-pixel-ratio: 2/1),
-only screen and (        min-device-pixel-ratio: 2),
-only screen and (                min-resolution: 192dpi),
-only screen and (                min-resolution: 2dppx) { 
-  
-/* Retina-specific stuff here */
-
+@media 
+only screen and (-webkit-min-device-pixel-ratio: 2), 
+only screen and (min-resolution: 192dpi) { 
+    /* Retina-specific stuff here */
 }
 
 /* ==========================
 	IE10 Snap Mode
    ========================== */ 
-@media screen 
-and (max-width:400px) {
+@media 
+screen and (max-width:400px) {
     @-ms-viewport {
   		width: device-width;
     	/* Styles */
