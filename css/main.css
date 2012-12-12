@@ -1,5 +1,10 @@
 /* ==========================================================================
-   	Contents
+   	
+   	HTML5 Baseplate - http://maxquattromani.com/HTML5-baseplate/
+
+  	Author: Max Quattromani
+  	Version: 1.6 - Updated: 12 December, 2012
+
    ========================================================================== */
 
 /*
@@ -239,6 +244,7 @@ h4,
 h5, 
 h6 { 
 	font: bold Arial, sans-serif; 
+	margin-bottom: 1.443em;
 }
 
 h1 {
